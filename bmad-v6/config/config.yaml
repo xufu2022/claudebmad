@@ -1,0 +1,26 @@
+# BMAD v6 Configuration
+version: 6.0.3
+default_phase: Analysis
+memory_file: bmad/memory.md
+use_helpers: true
+auto_orchestrate: true
+
+agents:
+  orchestrator: bmad-master
+  business_analyst: business-analyst
+  product_manager: product-manager
+  system_architect: system-architect
+  scrum_master: scrum-master
+  developer: developer
+  ux_designer: ux-designer
+  builder: builder
+  creative_intelligence: creative-intelligence
+
+workflow:
+  phases:
+    - Analysis
+    - Planning
+    - Solutioning
+    - Implementation
+    - Review
+  strict_mode: true
